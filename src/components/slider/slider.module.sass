@@ -1,0 +1,38 @@
+.title
+    text-align: center
+    margin-top: 20px
+.slider
+    margin-top: 20px
+    margin-bottom: 20px
+    .window
+        position: relative
+        margin: 0 auto
+        width: 600px
+        height: 635px
+        overflow: hidden
+        box-shadow: 0 4px 6px 0 #171717
+        border-radius: 15px
+        .loading
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 40px
+            font-weight: 700
+            color: rgb(32, 33, 36)
+            z-index: -1
+        .items
+            display: flex
+            transition-duration: 0.3s
+            z-index: 100
+        .arrowRight
+            position: absolute
+            right: 0
+            top: 50%
+            cursor: pointer
+
+        .arrowLeft
+            position: absolute
+            left: 0
+            top: 50%
+            cursor: pointer
