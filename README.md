@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+## Задание
+Используя API https://jsonplaceholder.typicode.com/guide/ необходимо сделать админскую панель для просмотра сущностей в этом API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Стек
+Обязательно-минимальный стек:
+- React;
+- Redux;
+- Axios;
+- React Router v.6;
 
-## Available Scripts
+Можно использовать любые библиотеки:
+- Redux-Toolkit;
+- Redux-Act;
+- и т.д.
 
-In the project directory, you can run:
+Можно использовать любую библиотеку стилей:
+- Ant design;
+- Material;
+- Bootstrap;
+- и т.д.
 
-### `npm start`
+## Сущности
+При разработке должны быть использованы следующие сущности:
+- Посты, к ним идут комментарии. Необходимо сделать древовидную структуру просмотра (как на любом форуме, пикабу, реддит и тд).
+- Альбомы, к ним идут фотографии. Каждый альбом - это слайдер. Слайды - фотки, прикрепленные к альбому.
+- Todos, сущность с 2мя состояниями. Необходимо сделать доску с 2мя статусами и реализовать Drug&Drop по переносу с одной колонки в другую.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Критерии оценки
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Основные баллы начисляются за реализацию базовых секций:
+- Вкладка с просмотром постов и комментариев к ним = 40б;
+- Вкладка с альбомов = 40б;
+- Вкладка с просмотром Todos = 40б;
 
-### `npm test`
+Дополнительные баллы можно получить за:
+- Реализация на TS = 20б;
+- Приемлемый внешний вид и хорошо подобранная палитра цветов = 10б;
+- Собственная сборка на webpack без использования create-react-app = 5б;
+- Тесты (любые unit, e2e ...) = 5б;
+- Не нативный Redux (redux-toolkit и т.д.) = 20б;
+- Реализацию всего CRUD. Создание сущности на url: "/create" = 10б, редактирование на "/edit/:id" = 10б, удаление = 5б;
+- За использование методов массива, предназначенных для их обработки: map, filter, reduce, some, every = 5б;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Основные баллы: 40 + 40 + 40 = 120
+Дополнительные баллы: 20 + 10 + 5 + 5 + 20 + 10 + 10 + 5 + 5 = 90
+Итого: 210
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deploy
+Код задания необходимо выложить на GitHub, и задеплоить на любой бесплатный сервис, чтобы была возможность посмотреть (GitHub pages, heroku, etc). Если вдруг не получается сделать что-то все равно нужно сделать максимум. Минимумом считается задеплоенный проект, хотя бы с одной секцией.
